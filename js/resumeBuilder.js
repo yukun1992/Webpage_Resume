@@ -10,7 +10,7 @@ This is empty on purpose! Your code to build the resume will go here.
 		"github": "yukun1992",
 		"location": "Riverside, CA, USA"
 	},
-	"picture": "images/fry.jpg",
+	"picture": "images/photo.jpg",
 	"skills": ["Java", "C", "Python", "HTML/CSS", "JavaSprict", "Android Development", "Web Development"]
 };
 
