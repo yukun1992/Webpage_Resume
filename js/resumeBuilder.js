@@ -11,7 +11,7 @@ This is empty on purpose! Your code to build the resume will go here.
 		"location": "Riverside, CA, USA"
 	},
 	"picture": "images/fry.jpg",
-	"skills": ["C", "Java", "python", "Android Development", "Web Development"]
+	"skills": ["Java", "C", "Python", "HTML/CSS", "JavaSprict", "Android Development", "Web Development"]
 };
 
 
@@ -55,7 +55,7 @@ var work = {
 		"title" : "Intership",
 		"location" : "Shanghai, China",
 		"datesWorked": "September 2014 - Dec 2014",
-		"description" : " Tested electrical chemistry devices, recorded bugs for devices and Written instructions for customers"
+		"description" : " Tested electrical chemistry devices, recorded bugs for devices and wrote instructions for customers"
 	}]
 };
 
@@ -89,9 +89,23 @@ display();
 var projects = {
 	"projects": [
 		{
+			"title": "Memory Game",
+			"datesWorked": "2/2017 - 3/2017",
+			"description": "The Memory Game Project is a browser-based card matching game (also known as Concentration)",
+			"images": ["images/game.jpg"],
+			"url" : "https://yukun1992.github.io/fend-project-memory-game/"
+		},
+		{
+			"title": "Neighborhood Map",
+			"datesWorked": "2/2017 - 3/2017",
+			"description": "Single-page, responsive application built with Knockout.js framework and hosted on GitHub Pages",
+			"images": ["images/neighbor.png"],
+			"url" : "https://yukun1992.github.io/Neighborhood-Map/"
+		},
+		{
 			"title": "Item Catalog",
 			"datesWorked": "2/2017 - 3/2017",
-			"description": "Developed a web application with log in, post and delete news functions using the Python framework Flask",
+			"description": "Developed a web application with log in post and delete news functions using the Python framework Flask",
 			"url" : "https://github.com/yukun1992/Item-Catalog"
 		},
 		{
@@ -140,15 +154,23 @@ var education = {
 			"name" : "University of California, Riverside",
 			"date" : "9/2015 - 6/2017",
 			"location" : "Riverside, CA",
-			"degree" : "MS",
+			"degree" : "M.S",
 			"major" : "Electrical Engineering",
 			"url" : "http://www.ucr.edu/"
+		},
+		{
+			"name" : "University of Shanghai Science and Technology",
+			"date" : "9/2011 - 6/2015",
+			"location" : "Shanghai, China",
+			"degree" : "B.S",
+			"major" : "Electrical Engineering",
+			"url" : "http://www.usst.edu.cn/"
 		}
 	],
 	"onlineCourses": [
 		{
 			"schools" : "Udacity",
-			"title" : "Full Stack Nano Degree",
+			"title" : "Full Stack NanoDegree",
 			"date" : "4/2017",
 			"url" : "https://github.com/yukun1992/Item-Catalog/blob/master/certificate%20(2).pdf"
 		},
@@ -185,9 +207,9 @@ education.display = function() {
 			for(i in education.onlineCourses) {				
 				$("#education").append(HTMLschoolStart);
 				var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
-				var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
+				var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].schools);
 				var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].date);
-				var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
+				var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].schools).replace("#", education.onlineCourses[i].url);
 
 				$(".education-entry:last").append(formattedOnlineTitle );
 				$(".education-entry:last").append(formattedOnlineDates);
