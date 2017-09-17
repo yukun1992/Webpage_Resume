@@ -47,18 +47,15 @@ for(i in formattedContactInfo) {
 
 
 
-
-
 var work = {
 	"jobs" : [{
-		"employer" : "Shanghai INESA Scientific Instrument Co",
-		"title" : "Intership",
-		"location" : "Shanghai, China",
-		"datesWorked": "September 2014 - Dec 2014",
-		"description" : " Tested electrical chemistry devices, recorded bugs for devices and wrote instructions for customers"
+		"employer" : "Systems Optimization and Computer Architecture Lab ",
+		"title" : "Research Volunteer",
+		"location" : "Riverside, CA",
+		"datesWorked": "January 2017 - Current",
+		"description" : "Tested existing algorithm in data centers’ socket level,  modified source code for data center’s simulator and wrote report for simulation results "
 	}]
 };
-
 
 
 
