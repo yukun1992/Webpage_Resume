@@ -11,7 +11,7 @@ This is empty on purpose! Your code to build the resume will go here.
 		"location": "Riverside, CA, USA"
 	},
 	"picture": "images/photo.jpg",
-	"skills": ["Java", "C", "Python", "HTML/CSS", "JavaSprict", "Android Development", "Web Development"]
+	"skills": ["Java", "C", "Python", "HTML/CSS","Hadoop", "Spark", "Meachine larning", "JavaSprict", "Android Development", "Web Development"]
 };
 
 
@@ -85,6 +85,16 @@ display();
 
 var projects = {
 	"projects": [
+		{
+			"title": "Hadoop Movie Recommender System",
+			"datesWorked": "2/2017 - 3/2017",
+			"description": "Deployed docker and built Hadoop in docker, Normalize co-occurrence matrix about movie rating, Built rating matrix, Multiply co-occurrence matrix and rating matrix by MapReduce"
+		},
+		{
+			"title": "Hadoop autocompleted System",
+			"datesWorked": "2/2017 - 3/2017",
+			"description": "Used MapReduce to count the frequency of word in a huge file, Built N-gram model to construct English word, Set up Database and written from MapReduce to database, Count probability and show the content based on the probability, Made use of jQuery, PHP and AJAX to query data from database"
+		},
 		{
 			"title": "Memory Game",
 			"datesWorked": "2/2017 - 3/2017",
